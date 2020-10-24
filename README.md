@@ -1,5 +1,5 @@
 
-### Simply Crawling and Scraping Web Pages with s & e:
+## Simply Crawling and Scraping Web Pages with setting s & e:
     
     def getUrl(self):
         for pgNum in range(s,e):
