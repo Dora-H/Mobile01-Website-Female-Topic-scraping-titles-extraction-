@@ -63,7 +63,7 @@ MfSpyder
             ppl.setDaemon(True)
             ppl.start()
        
-        # 如果組合為空，則執行其他程序
+        # if it is empty, run other functions
         self.urlsQ.join()
         self.ressQ.join()
 
@@ -93,7 +93,7 @@ MfSpyder
             # delete a task after is deing done from urlsQ function by using task.done()
             self.urlsQ.task_done()
            
-	   # go back to step 1 line 53
+	    # go back to step 1 line 53
     
 #### 4. Go to the getContext function:
     def getContext(self):
