@@ -4,6 +4,7 @@ from queue import Queue
 import threading
 import time
 
+
 class MfSpyder(object):
     def __init__(self):
         self.baseurl = "https://www.mobile01.com/topiclist.php?f=372"
@@ -13,6 +14,7 @@ class MfSpyder(object):
         #響應組合
         self.ressQ = Queue()
    
+
     #生成urls網址組合
     def getUrl(self):
         #指定要爬取幾頁，依照網址規律設定，此為第1頁至第15頁
@@ -21,6 +23,7 @@ class MfSpyder(object):
             #將之依序放(put)urls網址組合中
             self.urlsQ.put(url)
    
+
     #獲得網址原始碼組合
     def getHtml(self):
         #設定從self.urlsQ網址組合中循環提取url
@@ -35,6 +38,7 @@ class MfSpyder(object):
             #從self.urlsQ網址組合中提取url後需要刪除(task_done())
             self.urlsQ.task_done()
            
+        
     #解析原始碼
     def getContext(self):
         while True:
@@ -75,7 +79,6 @@ class MfSpyder(object):
         #如果組合為空，則執行其他程序
         self.urlsQ.join()
         self.ressQ.join()
-           
    
    
 if __name__=="__main__":
