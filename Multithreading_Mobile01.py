@@ -83,4 +83,4 @@ if __name__=="__main__":
     spider = MfSpider()
     spider.Work()
     end_time = time.time()
-    print('Codes running time: ',end_time - begin_time)
+    print('Codes execution time: ',end_time - begin_time)
