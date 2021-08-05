@@ -1,12 +1,13 @@
 Mobile01 Website  Female-Topics scraping, titles extraction.
 
+
 ## Requirements
 ● Python 3    
 ● requests   
 ● lxml   
-● queue
-● threading
-● time
+● queue  
+● threading    
+● time   
 
 
 ## Class
@@ -23,15 +24,15 @@ MfSpider
 ## Run Codes
 ### Simply Crawling and Scraping Web Pages with below descriptions to start:
 
-#### 1. Call the main finction to work, Work.
+#### 1. Call the main finction to work, Work. (& Record the execution time of code program.)
     if __name__=="__main__":
-    #整體程序開始執行時間
-    begin_time = time.time()
-    spider = MfSpider()
-    spider.Work()
-    end_time = time.time()
-    print('總程序執行時間: ',end_time - begin_time)
-				
+       # to activate a time period record.
+       begin_time = time.time()
+       
+       spyder = MfSpider()
+       # call s
+       spyder.Work()
+       				
 #### 2. Go to the first function, getUrl:
     
 				
@@ -42,7 +43,10 @@ MfSpider
     
         
 #### 5. Finish:
-	
+       # to end the time period record.
+       end_time = time.time()
+       # prints the execution time
+       print('Codes execution time: ', end_time - begin_time)
     
 ## Simply Crawling and Scraping Web Pages with setting s & e:
         def getUrl(self):
