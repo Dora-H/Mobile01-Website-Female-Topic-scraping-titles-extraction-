@@ -4,7 +4,7 @@ from queue import Queue
 import threading
 import time
 
-class MfSpider(object):
+class MfSpyder(object):
     def __init__(self):
         self.baseurl = "https://www.mobile01.com/topiclist.php?f=372"
         self.headers = {'User-Agent':'Morzilla/5.0'}
@@ -80,7 +80,7 @@ class MfSpider(object):
    
 if __name__=="__main__":
     begin_time = time.time()
-    spider = MfSpider()
-    spider.Work()
+    spyder = MfSpyder()
+    spyder.Work()
     end_time = time.time()
     print('Codes execution time: ',end_time - begin_time)
