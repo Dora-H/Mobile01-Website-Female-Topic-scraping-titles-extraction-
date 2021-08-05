@@ -1,4 +1,3 @@
-'''多線程-Mobile01網站/ 女性 / 光鮮亮麗玩保養'''
 import requests
 from lxml import etree
 from queue import Queue
@@ -80,9 +79,8 @@ class MfSpider(object):
    
    
 if __name__=="__main__":
-    #整體程序開始執行時間
     begin_time = time.time()
     spider = MfSpider()
     spider.Work()
     end_time = time.time()
-    print('總程序執行時間: ',end_time - begin_time)
+    print('Codes running time: ',end_time - begin_time)
